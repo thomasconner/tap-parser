@@ -18,7 +18,7 @@
     "tap": "^14.4.1"
   },
   "scripts": {
-    "build": "browserify index.js > browser.js",
+    "build": "browserify index.js --standalone Parser --outfile browser.js",
     "snap": "tap",
     "test": "tap",
     "preversion": "npm test && npm run build",
